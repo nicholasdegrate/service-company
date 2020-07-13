@@ -1,0 +1,1 @@
+// work on nav doesn't stay on the end. look up clientHeight clientWidth or getBoundElementRect()

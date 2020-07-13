@@ -1,0 +1,119 @@
+extends layout
+
+
+block body
+    #main-header-section
+        .header-section-text
+            .header-logo-and-text-container
+                h2 Uplift your creative business<br>with elegant design
+                    img(src="img/logo.png", alt="")
+            .header-img-wrapper
+                .header-img-container
+                    img(src="img/header-woman.png", alt="woman-header")
+            .design-container.header-info-container
+                h3 design
+                p UI, UX, graphic
+                .design-container-line.line-zero
+            .typography-container.header-info-container
+                h3 typography
+                p lettering, print
+                .design-container-line.line-one
+            .branding-container.header-info-container
+                h3 branding
+                p logo, style, identity
+                .design-container-line.line-two
+    #hire-us-section
+        #hire-us-section-wrapper
+            .hire-us-section-one
+                .hire-us-section-one-img-section
+                    img(src="img/woman.png", alt="")
+                .hire-us-section-one-content-section
+                    h3 Why you should<br>hire us?
+                    ul
+                        li
+                            a(href="#") Plantie
+                        li
+                            a(href="#") Squarespace
+            .hire-us-section-two
+                h1 
+                    .price-container
+                        h2 $29<br> MONTH
+                    span.char0 p
+                    span.char1 r
+                    span.char2 i
+                    span.char3 c
+                    span.char4 e
+                    span.char5
+                    span.char6 F
+                    span.char7 r
+                    span.char8 o
+                    span.char9 m
+                    span.char10 
+                    span.char11 P
+                    span.char12 r
+                    span.char13 i
+                    span.char14 c
+                    span.char15 e
+                    span.char16
+                    span.char17 F
+                    span.char18 r
+                    span.char19 o
+                    span.char20 m
+                    span.char21 
+                    span.char22 p
+                    span.char23 r
+                    span.char24 i
+                    span.char25 c
+                    span.char26 e
+                    span.char27
+                
+    #our-mission-section
+        <svg class='curve-top' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" style="null;/*startDM*/background-color: rgba(0, 0, 0, 0) !important;/*endDM*/"></path></svg>
+        <svg class='curve-bottom' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#000" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" style="null;/*startDM*/background-color: rgba(0, 0, 0, 0) !important;/*endDM*/"></path></svg>
+        #ourMission 
+            .our-mission-container
+                h2.sub-heading  Our Mission
+                
+                p.text We deliver meaningful and lasting results for our clients by improving the experience of their users. Within a close cooperation with our clients we define, design and develop truly enjoyable products for people.  
+                
+                .buttons-container
+                    button(type=button) Understanding
+                    button(tye=buttonn) Prototyping
+                    button(type=button) Improve
+            .emptyDiv
+    #our-choose
+        h2 Our Choose
+        .our-choose-wrapper
+            .our-choose-container.our-choose-container-one
+                .our-choose-content-container
+                    h3 Student
+                    a(href="/student") Learn More
+                img(src="img/student.png", alt="student")
+            .our-choose-container.our-choose-container-two
+                .our-choose-content-container
+                    h3 Business
+                    a(href="/business") Learn More
+                img(src="img/student.png", alt="student")
+            .our-choose-container.our-choose-container-three
+                .our-choose-content-container
+                    h3 Non-Profit
+                    a(href="#") Learn More
+                img(src="img/nonprofit.png", alt="non profit")
+    #contact-and-about-section
+        #about-section
+            h2 About Us
+            p We have established our own UX/UI company because we believe that there is always a better way to do things. We are truly passionate about experiences, user interfaces and developing the best possible digital products. In a very short time we have grouped highly talented people to help us on our journey - design the world we would like to live in.
+        #contact-section
+            h2 Contact Us
+            form(action="#", method="post")
+                .input-container
+                    label(for="Name") Name
+                    input(type="text", name='name', placeholder="Name")
+                .input-container
+                    label(for="Phone") Phone
+                    input(type="tel", name="phone", placeholder="Phone")
+                .input-container
+                    label(for="Email") Email
+                    input(type="email", name="email", placeholder="Email")
+                button(type="submit")
+                    p  Submit

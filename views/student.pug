@@ -1,0 +1,54 @@
+extends layout
+
+
+block body
+    .student-wrapper
+        .student-header-container
+            .student-header-img
+                img(src="img/students.jpg", alt="student2")
+                .student-header-img-cover
+            .student-header-content
+                .student-header-content-one
+                    h3 Students Take
+                    h2 15% off
+                    p Get 15% off your first full year of Stoppby by signing up with your academic email address.
+                .student-header-content-two
+                    h3 Search for your school
+                    form(action="/", method="get")
+                        .input-container
+                            input(type="search", name="", placeholder="search")
+        .student-center-section
+            .student-center-section-content
+                .student-center-content-one.student-center-content-auto 
+                    h4 Customizable Layouts
+                    h2 Do-It-Yourself
+                    p Bring your vision to life with by adding images with our Drag & Drop tools. Use the customizable settings to access a variety of fonts, colors, and layouts to help your website stand out.
+                .student-center-content-two.student-center-content-auto 
+                    h4 Marketing Tools
+                    h2 Grow Your Network
+                    p Extend your reach by linking your social media channels to your website. Use our built-in SEO tools to increase discoverability and add contact forms to help grow your professional network.
+                .student-center-content-three.student-center-content-auto 
+                    h4 Squarespace Analytics
+                    h2 Analyze & Optimize
+                    p Our all-in-one platform provides insights into visitor behavior through visual reports covering statistics like page views, popular content, contact submissions, subscribers, and more.
+                .student-center-content-four.student-center-content-auto 
+                    h4 Pricing
+                    h2 Flexible & Affordable
+                    p With our student discount, you are eligible to receive 50% off your first year on our platform. Our flexible and simple plans make it easy for you to take advantage of our designer templates and award-winning customer service at a price that works for you.
+        .customer-obession
+            <svg class='student-curve-top' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" style="null;/*startDM*/background-color: rgba(0, 0, 0, 0) !important;/*endDM*/"></path></svg>
+            <svg class='student-curve-bottom' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" style="null;/*startDM*/background-color: rgba(0, 0, 0, 0) !important;/*endDM*/"></path></svg>
+            .customer-img
+                .customer-img-content
+                    h2 Expert Customer Care
+                    p Get personalized support from our Customer Care Team via email or live chat. Customer Care Advisors are highly trained and work with Designers and Engineers in our New York City, Dublin, and Portland offices. They have deep Squarespace knowledge and are ready to help whenever you need it. 
+                .customer-img-wrapper
+                    img(src="img/studentcouch.jpg", alt="student on a couch").customer-img-holder
+                    .background-color-for-img
+                    .border-for-img
+            .customer-content
+                h2 Award-Winning Design
+                p Whether you’re showcasing a portfolio, publishing a blog, or running a business, our designer templates have proven to be the most beautiful way to present your ideas online. 
+        #student-footer
+            h3 Make Your Website Today
+            button(type="submit") Let's get started
