@@ -32,7 +32,71 @@ img {
     font-family: 'Comfortaa', cursive;
     color: #000;
 } 
+// coming soon 
+#coming-soon {
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    height:100vh;
+    width: 0%;
+    z-index: 101;
+    display: none;
+    background: #000;
+    transition: all 1s;
+    color: white;
+    #coming-soon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        transition: all .5s;
+        animation: fadeIn 3s;
+        position: relative;
+        h1 {
+            margin-bottom: .5em;
+        }
+        p {
+            text-align: center;
+            font-size: .9em;
+            max-width: 400px;
+        }
+        a {
+            margin: 1em;
+            text-align: center;
+            align-self: center;
+            padding: .5em;
+            color: #fff;
+            height: 2em;
+            width: 100%;
+            max-width: 200px;
+            background: color(accentTwo);
+            &:hover {
+                background-color: #fff;
+                color: #000;
+                transition: all .5s;
+            }
+        }
+    }
+}
+#join-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0vh; 
+    display: none;
+    z-index: 100;
+    width: 100%;
+    background: color(accentTwo);
+    transition: all 1s;
 
+}
+.coming-soon-open {
+    display: block !important;
+}
 // * home page
     // ! home header section
 #main-header-section {
@@ -288,6 +352,28 @@ img {
 svg {
     display: none;
 }
+// keyframe 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 5%);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
 
 // ! media queries 
 
@@ -329,7 +415,7 @@ svg {
                     width: 70%;
                     border: none;
                     cursor: pointer;
-                    background-color: color(lightgray);
+                    background-color: color(mainColor);
                     &:hover {
                         background-color: color(accentTwo);
                         transition: all .5s;
@@ -378,16 +464,6 @@ svg {
                 h2 {
                     width: 100%;
                     position: relative;
-                    // &:before {
-                    //     position: absolute;
-                    //     top: -1.6rem;
-                    //     left: -8rem;
-                    //     height: 100px;
-                    //     width: 100px;
-                    //     border-radius: 50%;
-                    //     content: '';
-                    //     background: color(lightgray);
-                    // }
                     img {
                         position: absolute;
                         left: -25%;
@@ -499,7 +575,6 @@ svg {
                         margin: 1em 0;
                         width: 60%;
                         cursor: pointer;
-                        background-color: color(lightgray);
                         &:hover {
                             background-color: color(accentTwo);
                             color: white
@@ -552,3 +627,4 @@ svg {
 @import 'includes/footer';
 @import 'includes/faq';
 @import 'includes/ourchoose';
+@import 'includes/business';

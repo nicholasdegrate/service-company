@@ -1,0 +1,84 @@
+/**********************
+Business Header Section
+***********************/
+.business-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4em;
+    padding: 8em;
+    max-width: $maxWidth;
+    margin: 0 auto;
+    .business-text {
+        padding-top: 5em;
+        p {
+            font-size: 3vmin;
+        }
+        h1 {
+            font-size: 5vmin;
+        }
+    }
+    .business-img {
+        img {
+            max-width: 500px;
+            padding-bottom: 6em;
+        }
+    }
+} 
+
+/***************************
+Middle Section 
+****************************/
+.middle-section { 
+    position: relative;
+    background-color: #0099ff;
+    display: grid;
+    grid-template-columns: auto auto;
+    //SVG Section
+    .business-top-curve {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 99.9%;
+        transform: rotate(180deg);
+        path {
+            fill: #0099ff;
+        }
+    }
+    .business-bottom-curve {
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: 99.9%;
+        transform: rotate(180deg);
+        path {
+            fill: #0099ff;
+        }
+    }
+    // Middle Section img & text
+    .middle-img {
+        position: relative;
+        img {
+            max-width: 350px;
+            margin-left: 10em;
+            position: absolute;
+            background-color: hotpink;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            .business-middle-img-cover {
+                position: absolute;
+                content: '';
+                left: 10%;
+                bottom: 5%;
+                background: black;
+                height: 90%;
+                width: 100%;
+            }
+        }
+    .middle-text {
+        background-color: red;
+        color: red;
+        padding-top: 5em;
+    }
+}
+}

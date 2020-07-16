@@ -12,11 +12,33 @@ hamburgerBtn.addEventListener('click', function() {
     body.style.overflow = 'hidden';
 });
 closeBtn.addEventListener('click', function() {
-    navContainer.style.height = '100vh';
-    navContainer.style.width = '0%';
+    navContainer.style.height = '0vh';
+    navContainer.style.width = '100%';
     liLinks.style.display = 'none';
     body.style.overflowY = 'scroll';
 });
+
+// home.pug - join btn
+const joinBtn = document.querySelector('.circle-join');
+const joinPage = document.querySelector('#coming-soon');
+const wrapper = document.querySelector('#main-wrapper');
+const joinDiv = document.querySelector('#join-div');
+const joinBtnText = document.querySelector('#coming-soon-container');
+joinBtn.addEventListener('click', function() {
+    joinPage.style.display = 'block';
+    joinDiv.style.display = 'block';
+    body.style.overflow = 'hidden';
+    body.appendChild(joinPage);
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            joinPage.style.height ='100vh';
+            joinPage.style.width = '90%';
+            joinDiv.style.height = '100vh';
+        });
+    });
+});
+// home.pug - our mission 
+
 
 // student.pug  - random displayed circle 
 const area = document.querySelector('.student-header-content');

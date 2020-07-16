@@ -1,31 +1,36 @@
 header#nav-header
-    h1.title-name 
-        img(src="img/logo.png", alt="logo")
-        a(href='/') Stoppby
-    nav
-        a(href="#").contact-link
-            h3 contact
-        .join-container
-            .circle-join
-                a(href='#') JOIN
-        #hamburger-container
-            #hamburger
-                .line
-                .line
-                .line
-        ul.nav-links-wrapper
-            .nav-container
-                .close
-                    p x
-                li
-                    a(href="/") Home
-                li
-                    a(href="#") Our Mission
-                li
-                    a(href="#") Project
-                li
-                    a(href="#") About
-                li
-                    a(href="#") FAQ
-                li
-                    a(href="#") Contact
+        h1.title-name 
+            img(src="img/logo.png", alt="logo")
+            a(href='/') Stoppby
+        nav
+            a(href="#").contact-link
+                h3 contact
+            .join-container
+                .circle-join
+                    a(href='#') JOIN
+                    .join-wrapper
+                        .join-wrapper-inner
+                            include ./feature 
+                        
+                        
+            #hamburger-container
+                #hamburger
+                    .line
+                    .line
+                    .line
+            ul.nav-links-wrapper
+                .nav-container
+                    .close
+                        p: span.x-one: span.x-two
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="#") Our Mission
+                    //- li
+                    //-     a(href="#") Project
+                    //- li
+                    //-     a(href="#") About
+                    //- li
+                    //-     a(href="#") FAQ
+                    li
+                        a(href="#") Contact

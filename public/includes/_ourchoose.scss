@@ -1,4 +1,7 @@
 // our choose
+
+
+// student section 
 .student-wrapper {
     height: 100%;
     margin: 0 auto;
@@ -303,5 +306,49 @@
 @media screen and (min-width:1200px) {
     .customer-img-content {
         justify-self: center !important;
+    }
+}
+
+
+// blogger  section
+#blogger-wrapper {
+    .blogger-header-section {
+        width: 90%;
+        margin: 5em auto;
+        max-width: $maxWidth;
+        display: grid;   
+        justify-content: center;
+        .blogger-header-section-one {
+            margin: 1em auto;
+            max-width: 400px;
+
+            h2 {
+                margin-bottom: .5em;
+            }
+            p {
+                font-size: .9em;
+            }
+        }
+        .blogger-header-section-two {
+            max-width: 400px;
+            height: 600px;
+            margin: auto;
+        }
+    }
+    // .blogger-middle-section {}
+    // .blogger-footer-section {}
+}
+
+@media screen and (min-width: 800px) {
+    .blogger-header-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        .blogger-header-section-one {
+            align-self: center;
+            h2 {
+                font-size: font(large);
+                margin-bottom: .3em !important;
+            }
+        }
     }
 }
