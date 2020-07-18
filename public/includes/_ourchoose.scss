@@ -45,10 +45,11 @@
             }
             .input-container {
                 width: 100%;
-                input {
+                input[type=search] {
+                    -webkit-appearance: none !important;
                     width: 100%;
                     max-width: 500px;
-                    height: 4em;
+                    height: 4em ;
                     border: none;
                     background: color(accentThree);
                     padding-left: 1em;

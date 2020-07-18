@@ -37,8 +37,26 @@ joinBtn.addEventListener('click', function() {
         });
     });
 });
+
+
+
 // home.pug - our mission 
 
+const ourMissionText = document.querySelector('.our-mission-container .text');
+const ourMissionImage = document.querySelector('#ourMission .emptyDiv');
+const ourMissionBtnContainer = document.querySelector('.buttons-container');
+const ourMissionBtns = document.querySelector('.buttons-container button');
+const textArr = [
+    'We deliver meaningful and lasting results for our clients by improving the experience of their users. Within a close cooperation with our clients we define, design and develop truly enjoyable products for people.', 
+    'Strengthen your brand with professional email @ your custom domain name. Get one inbox and one user free for the first year with select plans.',
+    'Squarespace powers millions of websites and online stores across hundreds of industries. Find your inspiration from these small business websites.'
+];
+let nodes = ourMissionBtnContainer.children;
+textArr.forEach(n => {
+    if (parseInt(Object.keys(nodes)) === textArr.indexOf(n)) {
+        console.log(n);
+    }
+});
 
 // student.pug  - random displayed circle 
 const area = document.querySelector('.student-header-content');
